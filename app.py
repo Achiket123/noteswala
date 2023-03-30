@@ -153,8 +153,13 @@ def home():
 
 
 
-@app.route('/not_uploaded.html')
+@app.route('/not_uploaded.html' ,methods=['POST','GET'])
 def no_upload():
+    if request.method=='POST':
+        search = request.form.get('search-box').lower()
+        return render_template('search.html',search=search,Chemistry11=Chemistry11,Physics11=Physics11,Maths11=Maths11)
+
+
     return render_template('not_uploaded.html')
 
 
