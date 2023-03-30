@@ -1,9 +1,16 @@
 body {
     display: inline;
-    background-color: rgb(42, 48, 52);
+    background-color: rgb(26, 38, 46);
 }
-
-
+.class-name{
+    padding-top: 5%;
+    font-family: 'Courier New', monospace;
+}
+h1{
+    padding: -10px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
 nav img {
 
     display: inline;
@@ -123,12 +130,15 @@ nav .txt{
 
 
 .search{
+    /* padding-top: -20px; */
     padding: 2%;
-    margin: 10% 10% 1% 10%;
+    margin: 3% 10% 1% 10%;
     display: flex;
     /* justify-content: center; */
     border-radius: 40px;
-    background-color: rgb(62, 62, 62, 0.4);
+    background: rgb(62, 62, 62, 0.4);
+    backdrop-filter: blur(40px);
+    
 }
 .textbox{
     font-size: 20px;
@@ -140,6 +150,7 @@ nav .txt{
     background-color: #4f4f4f;
     outline: none;
     border-radius: 40px;
+    
 }
 .button{
     margin: 2%;
@@ -237,4 +248,76 @@ text-decoration: none;
     top: 0px;
     left: 150px;
  
+}
+
+li{
+    list-style: none;
+    
+}
+.links{
+    display: flex;
+    justify-content: center;
+}
+ul {
+    display: inline;
+    padding: 40px;
+    margin-right: -19px;
+    gap: -30px;
+   
+}
+/* Set the background color to dark grey and the font color to light grey for the body element */
+body.dark-theme {
+	background-color: #333;
+	color: #ddd;
+}
+
+/* Set the font size and line height for the header element */
+header {
+	font-size: 1.2rem;
+	line-height: 2;
+}
+
+/* Set the font color to white and add a border to the active link in the navigation */
+nav ul li.active a {
+	color: #fff;
+	border-bottom: 2px solid #fff;
+}
+
+/* Set the font size and line height for the main heading */
+main h1 {
+	font-size: 1.5rem;
+	padding-top: 40px;
+}
+
+/* Set the font size and line height for the subheadings */
+main h2 {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+/* Set the font size and line height for the paragraphs */
+main p {
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+/* Set the font size and line height for the footer */
+footer {
+	font-size: 0.8rem;
+	line-height: 1rem;
+}
+
+/* Set the font color and text decoration for links */
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Add some margin to the top and bottom of the body element */
+body {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+.inline{
+    display: inline;
 }
